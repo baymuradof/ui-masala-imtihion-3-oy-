@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding: 50px 5%;
+  background-color: cornflowerblue;
+}/*# sourceMappingURL=main.css.map */

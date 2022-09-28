@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;             
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    padding: 50px 5%;
+    background-color: cornflowerblue;
+
+    h1{
+        color: white;
+        text-align: center;
+    }
+
+    form{
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .left{
+            max-width: 1100px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+
+            #restaurant{
+                grid-column: 2/4;
+            }
+
+            input[type="text"]{
+                padding: 18px 23px;
+                border-radius: 10px;
+                border: 1px solid gray;
+            }
+        }
+
+        .right{
+            max-width: 169px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            #btn{
+                background-color: #1de755;
+                padding: 8px 30px;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .cards{
+        
+        .card{
+            margin-top: 50px;
+            width: 100%;
+            padding: 40px;
+            background-color: white;
+            border-radius: 30px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+
+            .img{
+                width: 100%;
+                height: 190px;
+                border-radius: 20px;
+                background-color: red;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .name-list{
+                grid-column: 2/4;
+                width: 100%;
+                height: 190px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                ul{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 20px;
+
+                    li{
+                        width: 100%;
+                        font-size: 18px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        list-style: none;
+                    }
+                }
+            }
+
+            .buttons{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                button{
+                    padding: 15px;
+                    font-size: 17px;
+                    cursor: pointer;
+                    color: white;
+                    border: none;
+                }
+                .delete{
+                    background-color: red;
+                }
+                .date{
+                    background-color: rgb(193, 193, 44);
+                }
+                .epsont{
+                    background-color: forestgreen;
+                }
+            }
+        }
+
+        .none{
+            display: none;
+        }
+    }
+}
+
+
+
